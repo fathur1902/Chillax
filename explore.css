@@ -1,0 +1,261 @@
+html, body {
+    height: 100%;
+    margin: 0; /* Menghilangkan margin default */
+}
+
+body {
+    font-family: 'Poppins';font-size: 20px;
+    margin: 0;
+    background-color: #FEF6D9;
+    color: white;
+    overflow-y: scroll;
+}
+
+header .navbar-brand {
+    font-size: 1.5rem;
+}
+
+.logo-bg {
+    background-color: white;
+    padding: 5px;
+    border-radius: 30px / 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+header .chillax-navbar-brand {
+    font-size: 1.5rem;
+}
+
+.d-flex {
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Memastikan elemen berada di tengah vertikal */
+}
+
+
+.chillax-logo-bg {
+    background-color: white;
+    padding: 5px;
+    border-radius: 30px / 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.chillax-sidebar {
+    background-color: #000000;
+    width: 300px;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Memastikan footer berada di bawah */
+}
+
+.chillax-main-content {
+    flex: 1;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: left;
+}
+
+.chillax-section-title {
+    color: #000000; /* Ubah warna teks menjadi hitam */
+    font-weight: bold; /* Bisa tambahkan font-weight untuk memperjelas */
+}
+
+.chillax-music-player {
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.chillax-nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.chillax-nav-option {
+    opacity: 0.7;
+    padding: 0.5rem;
+    transition: opacity 0.2s;
+}
+
+.chillax-nav-option:hover {
+    opacity: 1;
+}
+
+.chillax-library {
+    background-color: #121212;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.chillax-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Membatasi ukuran kartu dan grid */
+    gap: 1rem; /* Jarak antar kartu */
+    padding: 1rem 0;
+    justify-content: center; /* Menyesuaikan posisi konten di tengah */
+    max-width: 1200px; /* Membatasi lebar kontainer agar tidak terlalu lebar */
+    margin: 0 auto; /* Membuat kontainer tetap berada di tengah */
+}
+
+.chillax-card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease; /* Transisi saat hover */
+    width: 100%;
+    max-width: 200px; /* Membatasi ukuran maksimum kartu */
+    position: relative;
+}
+
+
+/* Efek hover untuk kartu */
+.chillax-card:hover {
+    transform: translateY(-10px); /* Kartu akan bergerak sedikit ke atas saat dihover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
+}
+
+/* Gambar kartu */
+.chillax-card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Menjaga proporsi gambar */
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Judul kartu */
+.chillax-card-title {
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; /* Tambahkan jarak di bawah judul */
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+/* Informasi tambahan pada kartu */
+.chillax-card-info {
+    font-size: 0.85rem;
+    color: #666;
+    text-align: left;
+    margin-bottom: 2rem; /* Tambahkan jarak di bawah info untuk ikon */
+}
+
+.chillax-card svg {
+    position: absolute;
+    bottom: 30px; /* Atur jarak dari bawah */
+    right: 35px;  /* Atur jarak dari kanan */
+    color: #FFC100; /* Atur warna ikon play */
+    cursor: pointer;
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .chillax-cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Kartu lebih kecil untuk tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .chillax-cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Kartu lebih kecil untuk ponsel */
+    }
+
+    .chillax-card-image {
+        height: 120px;
+    }
+}
+
+.footer {
+    background-color: #F9C700;
+    padding: 20px 0;
+  }
+  
+  .footer .container {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  .footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer .col-md-6 {
+    flex-basis: 50%;
+  }
+  
+  .footer .text-right {
+    text-align: right;
+  }
+  
+  .footer ul.list-inline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer ul.list-inline li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer ul.list-inline li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer ul.list-inline a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .footer ul.list-inline a:hover {
+    color: #333;
+  }
+  
+  .footer p {
+    color: #333;
+    /* Warna teks hak cipta */
+    margin-top: 0;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .footer .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .navbar-brand img {
+    margin-right: 10px;
+    /* Jarak antara logo dan teks */
+  }
+  
+  .footer .navbar-brand p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }

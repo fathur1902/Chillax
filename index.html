@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chillax</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="bg-warning py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light d-flex align-items-center">
+                <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                    <img src="srcimg/logo.png" alt="Logo" class="logo-bg me-2" width="120" height="55">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quiz Mood</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="explore.html">Meditasi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Diary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chat Bot</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button class="btn btn-outline-dark mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
+                                <path
+                                    d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
+                            </svg></button>
+                        <button class="btn btn-outline-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-color: #FEF6D9; padding: 60px 0;">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-5 offset-md-1">
+                    <!-- Offset to shift left -->
+                    <h1 style="font-size:300%; font-weight: bold;">Tenangkan Pikiran, Naikkan Mood!</h1>
+                    <p class="lead">Rasakan ketenangan dan perbaiki mood dengan musik relaksasi, kuis mood harian, serta
+                        chat bot. Yuk, santai sejenak di Chillax!</p>
+                    <div class="d-grid gap-2 d-md-block">
+                        <button type="button" class="btn btn-warning rounded-4" onclick="window.location.href='explore.html'">Jelajahi Musik</button>
+                        <button type="button" class="btn btn-outline-dark rounded-4">Mulai Kuis</button>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <!-- Adjust image width -->
+                    <!-- Path gambar disesuaikan -->
+                    <img src="srcimg/gambar1.png" class="img-fluid" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section" style="background-color: #FEF6D9; padding: 60px 0; text-align: center;">
+        <div class="container">
+            <div class="quiz-box p-5">
+                <h2 style="font-size:200%; font-weight: bold;">Kuis Mood, Cari Tahu Tingkat Stresmu!</h2>
+                <p class="lead">Ikuti kuis ini untuk mengetahui tingkat stresmu hari ini. Dengan beberapa pertanyaan
+                    sederhana,
+                    kamu akan mendapatkan wawasan tentang suasana hati dan cara terbaik untuk meredakan stres.
+                    Ayo, temukan ketenangan di Chillax!
+                </p>
+                <button class="btn btn-warning btn-lg">Lihat</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section class="music-section py-5">
+        <div class="container text-center">
+            <h2 class="display-6 mb-5" style="font-weight: bold ">Meditasi dengan Beragam Jenis Musik!</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a href="explore.html" class="text-decoration-none">
+                        <!-- Link untuk Classic -->
+                        <div class="card h-100 bg-white border-0 rounded-4 d-flex flex-column align-items-center p-3">
+                            <div class="illustration mb-3">
+                                <img src="srcimg/musik1.png" alt="Classic Music" class="img-fluid rounded-4 border"
+                                    style="width: 100%;">
+                            </div>
+                            <div class="card-body text-start">
+                                <!-- Menambahkan text-start untuk rata kiri -->
+                                <h3 class="card-title">Classic</h3>
+                                <p class="card-text">Memiliki harmoni, yaitu hubungan nada-nada yang dimainkan secara
+                                    bersamaan dalam akord.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="explore.html" class="text-decoration-none">
+                        <!-- Link untuk Instrumental -->
+                        <div class="card h-100 bg-white border-0 rounded-4 d-flex flex-column align-items-center p-3">
+                            <div class="illustration mb-3">
+                                <img src="srcimg/musik2.png" alt="Instrumental Music" class="img-fluid rounded-4 border"
+                                    style="width: 100%;">
+                            </div>
+                            <div class="card-body text-start">
+                                <!-- Menambahkan text-start untuk rata kiri -->
+                                <h3 class="card-title">Jazz</h3>
+                                <p class="card-text">Musik ini dapat digunakan untuk terapi saraf dan mengurangi rasa
+                                    sakit.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="explore.html" class="text-decoration-none">
+                        <!-- Link untuk Jazz -->
+                        <div class="card h-100 bg-white border-0 rounded-4 d-flex flex-column align-items-center p-3">
+                            <div class="illustration mb-3">
+                                <img src="srcimg/musik3.png" alt="Jazz Music" class="img-fluid rounded-4 border"
+                                    style="width: 100%;">
+                            </div>
+                            <div class="card-body text-start">
+                                <!-- Menambahkan text-start untuk rata kiri -->
+                                <h3 class="card-title">Alam</h3>
+                                <p class="card-text">Suara alam dapat meningkatkan kesehatan tubuh, pikiran, dan mental.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Chatbot Section -->
+    <section class="hero" style="background-color: #FEF6D9; padding: 60px 0;">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-5 offset-md-1">
+                    <!-- Offset for text alignment -->
+                    <h1><strong style="font-size:200%;">Chillax</strong></h1>
+                    <h2 style="font-size:600%; font-weight: bold;">Chatbot</h2>
+                    <p class="lead">Teman Bicara, Dukungan dan Motivasi Kapan Saja. </p>
+                    <div class="d-grid gap-2 d-md-block">
+                        <button type="button" class="btn btn-warning rounded-4">Mulai Percakapan</button>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <!-- Adjust width of image -->
+                    <img src="srcimg/gambar2.png" class="img-fluid" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles-section py-5">
+        <div class="container">
+            <h2 class="display-6 mb-5 text-center" style="font-weight: bold ">Artikel Tentang Stress</h2>
+            <div class="row g-4 d-flex justify-content-center">
+                <div class="col-md-8">
+                    <!-- Artikel 1 -->
+                    <div class="card h-100 bg-white border-0 rounded-4 d-flex flex-row align-items-center p-3 mb-4">
+                        <div class="illustration">
+                            <img src="srcimg/1.png" alt="Ilustrasi Artikel 1" class="img-fluid" style="width: 420px;">
+                        </div>
+                        <div class="content ms-3">
+                            <h3 class="card-title fw-bold">Mengatasi Stres: Langkah Menuju Kesehatan Mental yang Lebih
+                                Baik</h3>
+                            <p class="card-text">Stres adalah respons alami tubuh terhadap tekanan yang dapat
+                                memengaruhi kesehatan mental dan fisik...</p>
+                            <button class="btn btn-warning btn-sm rounded-4"
+                                onclick="window.location.href='artikel.html'">Baca
+                                Selengkapnya</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!-- Artikel 2 -->
+                    <div class="card h-100 bg-white border-0 rounded-4 d-flex flex-row align-items-center p-3">
+                        <div class="illustration">
+                            <img src="srcimg/2.png" alt="Ilustrasi Artikel 1" class="img-fluid" style="width: 420px;">
+                        </div>
+                        <div class="content ms-3">
+                            <h3 class="card-title fw-bold">Stres dalam Kehidupan Sehari-hari: Strategi Efektif untuk
+                                Mengatasinya</h3>
+                            <p class="card-text">Stres adalah bagian dari kehidupan yang tak terhindarkan, tetapi
+                                penting untuk mengenali tanda-tandanya...</p>
+                            <button class="btn btn-warning btn-sm rounded-4"
+                                onclick="window.location.href='artikel.html'">Baca
+                                Selengkapnya</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6 d-flex align-items-center">
+                    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                        <img src="srcimg/logo.png" alt="Logo" class="logo-bg me-2" width="120" height="55">
+                    </a>
+                    <p class="lead mb-0">Copyright 2024 - Group 3 Ascending</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-muted">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-muted">Terms & Conditions</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-muted">Cookie Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

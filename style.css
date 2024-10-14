@@ -1,0 +1,201 @@
+body {
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+
+header .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.logo-bg {
+  background-color: white;
+  padding: 5px;
+  border-radius: 30px / 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.quiz-section {
+  background-color: #FEF6D9;
+
+}
+
+.quiz-box {
+  background-color: #fff;
+  /* Warna putih untuk kotak */
+  border-radius: 30px;
+  /* Sudut kotak yang melengkung */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Efek bayangan */
+  padding: 20px;
+  /* Ruang di dalam kotak */
+  display: inline-block;
+  /* Agar kotak menyesuaikan dengan isinya */
+  text-align: center;
+}
+
+.music-section {
+  background-color: #FEF6D9;
+}
+
+.music-section .card {
+  transition: transform 0.2s;
+  /* Animasi saat hover */
+}
+
+.music-section .card:hover {
+  transform: scale(1.05);
+  /* Efek zoom saat hover */
+}
+
+.music-section .illustration img {
+  max-width: 100%;
+  /* Memastikan gambar responsif */
+  height: auto;
+  border-radius: 0.5rem;
+  /* Melengkungkan border gambar */
+  border: 2px solid #ddd;
+  /* Menambahkan border pada gambar */
+  padding: 5px;
+  /* Menambahkan padding pada border */
+  background-color: white;
+  /* Background gambar agar border terlihat */
+}
+
+.chatbot-section {
+  background-color: #FEF6D9;
+}
+
+.articles-section {
+  background-color: #FEF6D9;
+}
+
+.articles-section .card {
+  background-color: #fff9e6;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.articles-section .illustration img {
+  width: 120px;
+  /* Ukuran gambar yang lebih kecil */
+}
+
+.articles-section .card+.card {
+  margin-top: 20px;
+  /* Menambahkan jarak antara artikel pertama dan kedua */
+}
+
+.articles-section .content {
+  margin-left: 20px;
+  /* Jarak antara gambar dan teks */
+}
+
+
+.articles-section .content h3 {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.articles-section .content p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.articles-section .btn {
+  background-color: #ffd400;
+  /* Warna tombol kuning */
+  border: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.articles-section .btn:hover {
+  background-color: #ffcc00;
+  /* Sedikit lebih gelap saat hover */
+}
+
+.articles-section .card:hover {
+  transform: translateY(-5px);
+  /* Efek saat hover sedikit naik */
+  transition: transform 0.2s ease;
+}
+
+
+.footer {
+  background-color: #F9C700;
+  padding: 20px 0;
+}
+
+.footer .container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .col-md-6 {
+  flex-basis: 50%;
+}
+
+.footer .text-right {
+  text-align: right;
+}
+
+.footer ul.list-inline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul.list-inline li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer ul.list-inline li:last-child {
+  margin-right: 0;
+}
+
+.footer ul.list-inline a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer ul.list-inline a:hover {
+  color: #333;
+}
+
+.footer p {
+  color: #333;
+  /* Warna teks hak cipta */
+  margin-top: 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.footer .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.footer .navbar-brand img {
+  margin-right: 10px;
+  /* Jarak antara logo dan teks */
+}
+
+.footer .navbar-brand p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
